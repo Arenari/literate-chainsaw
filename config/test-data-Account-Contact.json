@@ -1,0 +1,61 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef1"
+            },
+            "Name": "The Delightful Foundation",
+            "Contacts": {
+                "records": [
+                    {
+                        "attributes": {
+                            "type": "Contact",
+                            "referenceId": "ContactRef1"
+                        },
+                        "FirstName": "Lucas",
+                        "LastName": "Oliver"
+                    },
+                    {
+                        "attributes": {
+                            "type": "Contact",
+                            "referenceId": "ContactRef2"
+                        },
+                        "Salutation": "Mr.",
+                        "FirstName": "Riley",
+                        "LastName": "Jackson"
+                    }
+                ]
+            }
+        },
+        {
+            "attributes": {
+                "type": "Account",
+                "referenceId": "AccountRef2"
+            },
+            "Name": "Delightful Industries",
+            "Contacts": {
+                "records": [
+                    {
+                        "attributes": {
+                            "type": "Contact",
+                            "referenceId": "ContactRef3"
+                        },
+                        "Salutation": "Mr.",
+                        "FirstName": "Mateo",
+                        "LastName": "Smith"
+                    },
+                    {
+                        "attributes": {
+                            "type": "Contact",
+                            "referenceId": "ContactRef4"
+                        },
+                        "Salutation": "Ms.",
+                        "FirstName": "Jane",
+                        "LastName": "Doe"
+                    }
+                ]
+            }
+        }
+    ]
+}
