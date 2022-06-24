@@ -49,7 +49,7 @@ Please create a LWC that supports the functionality outlined below. The componen
 3. The label and value of the defined field are displayed to the user
 4. The layout of the component matches the wirefame given below
 5. The field value I define is saved and the same field is displayed every time I login, until I change it
-6. The component is styled to reflect the Lightful brand, as detailed here: http://lightful-brand.com/styleguide
+6. The component is styled to reflect the Lightful brand, as detailed here: [http://lightful-brand.com/styleguide](https://lightful-brand-resources.webflow.io/)
 
 ![alt text](./wireframe.png)
 
