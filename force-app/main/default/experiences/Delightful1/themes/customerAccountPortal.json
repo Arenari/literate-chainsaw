@@ -6,7 +6,8 @@
   "label" : "Customer Account Portal",
   "layouts" : {
     "Inner" : "4615a7ac-5caf-4164-a917-15c65c6c41a9",
-    "Login" : "67ffbc26-1a10-416d-99a8-3bec1aabbbb6"
+    "Login" : "67ffbc26-1a10-416d-99a8-3bec1aabbbb6",
+    "ServiceNotAvailable" : "74ca9e0f-b27d-4def-bc74-64df96744bd6"
   },
   "type" : "theme",
   "views" : [ {
@@ -50,14 +51,14 @@
           "maxAutoCompleteResults" : 5,
           "searchLabel" : "Search...",
           "searchObjects" : [ {
-            "name" : "KnowledgeArticleVersion",
-            "isPublic" : true
+            "isPublic" : true,
+            "name" : "KnowledgeArticleVersion"
           }, {
-            "name" : "Case",
-            "isPublic" : false
+            "isPublic" : false,
+            "name" : "Case"
           }, {
-            "name" : "ContentDocument",
-            "isPublic" : true
+            "isPublic" : true,
+            "name" : "ContentDocument"
           } ]
         },
         "componentName" : "forceCommunity:globalSearchInput",
@@ -117,6 +118,29 @@
     }, {
       "id" : "2644e2ac-945a-4d51-a026-8f7f40ab8702",
       "regionName" : "footer",
+      "type" : "region"
+    } ],
+    "type" : "view"
+  }, {
+    "componentAttributes" : {
+      "fixedPageWidth" : 1170,
+      "headerBgColor" : "rgba(0, 0, 0, 0)",
+      "isHeaderPinned" : false,
+      "isHeroUnderHeader" : false,
+      "isPageWidthFixed" : true,
+      "showHeader" : true,
+      "showHero" : true
+    },
+    "componentName" : "siteforce:themeLayoutStarter",
+    "id" : "74ca9e0f-b27d-4def-bc74-64df96744bd6",
+    "label" : "ServiceNotAvailable",
+    "regions" : [ {
+      "id" : "6d9d784d-24c1-4fe3-9a6b-fe59d78a1e72",
+      "regionName" : "themeHeader",
+      "type" : "region"
+    }, {
+      "id" : "5487e851-89fa-4979-a4aa-ed7edc1add64",
+      "regionName" : "themeFooter",
       "type" : "region"
     } ],
     "type" : "view"

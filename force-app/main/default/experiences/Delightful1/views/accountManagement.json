@@ -13,38 +13,38 @@
         "tabsetConfig" : {
           "UUID" : "6177b35b-ed71-4003-b2d5-a948b948dff2",
           "activeTab" : "tab1",
-          "useOverflowMenu" : false,
           "tabs" : [ {
             "UUID" : "f8f59934-0c6d-4812-ba9d-1738484a47f6",
-            "tabName" : "Members",
-            "tabKey" : "tab1",
-            "locked" : false,
             "allowGuestUser" : false,
+            "locked" : false,
             "seedComponents" : [ {
-              "fqn" : "forceCommunity:relatedList",
               "attributes" : {
+                "customTitle" : "Members",
                 "parentRecordId" : "{!CurrentUser.accountId}",
                 "relatedListName" : "Users",
-                "customTitle" : "Members",
-                "showCustomTitle" : "true",
                 "showBreadCrumbs" : "false",
-                "showRowNumbers" : "false",
-                "showManualRefreshButton" : "false"
-              }
-            } ]
+                "showCustomTitle" : "true",
+                "showManualRefreshButton" : "false",
+                "showRowNumbers" : "false"
+              },
+              "fqn" : "forceCommunity:relatedList"
+            } ],
+            "tabKey" : "tab1",
+            "tabName" : "Members"
           }, {
             "UUID" : "db3ce0dc-b936-44c2-a19f-03a274b970b8",
-            "tabName" : "Branding",
-            "tabKey" : "tab2",
-            "locked" : false,
             "allowGuestUser" : false,
+            "locked" : false,
             "seedComponents" : [ {
-              "fqn" : "forceCommunity:accountBrandRecord",
               "attributes" : {
                 "recordId" : "{!CurrentUser.accountId}"
-              }
-            } ]
-          } ]
+              },
+              "fqn" : "forceCommunity:accountBrandRecord"
+            } ],
+            "tabKey" : "tab2",
+            "tabName" : "Branding"
+          } ],
+          "useOverflowMenu" : false
         }
       },
       "componentName" : "forceCommunity:tabset",
@@ -100,8 +100,8 @@
   }, {
     "components" : [ {
       "componentAttributes" : {
+        "customHeadTags" : "",
         "description" : "",
-        "metaTags" : "",
         "title" : "Account Management"
       },
       "componentName" : "forceCommunity:seoAssistant",

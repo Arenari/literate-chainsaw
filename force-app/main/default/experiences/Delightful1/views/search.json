@@ -11,14 +11,14 @@
     "components" : [ {
       "componentAttributes" : {
         "scopes" : [ {
-          "name" : "KnowledgeArticleVersion",
-          "isPublic" : true
+          "isPublic" : true,
+          "name" : "KnowledgeArticleVersion"
         }, {
-          "name" : "Case",
-          "isPublic" : false
+          "isPublic" : false,
+          "name" : "Case"
         }, {
-          "name" : "ContentDocument",
-          "isPublic" : true
+          "isPublic" : true,
+          "name" : "ContentDocument"
         } ],
         "searchResultFiltering" : true,
         "searchTerm" : "{!term}",
