@@ -21,6 +21,8 @@
     <masterLabel>Delightful</masterLabel>
     <referrerPolicyOriginWhenCrossOrigin>true</referrerPolicyOriginWhenCrossOrigin>
     <requireHttps>true</requireHttps>
+    <serverIsDown>SNA_Delightful1_sf_default_cdn_QOn6Y</serverIsDown>
+    <siteAdmin>test-btxyizknyrvp@example.com</siteAdmin>
+    <siteGuestRecordDefaultOwner>test-btxyizknyrvp@example.com</siteGuestRecordDefaultOwner>
     <siteType>ChatterNetwork</siteType>
-    <subdomain>ruby-agility-4382-dev-ed-17628234a1b</subdomain>
 </CustomSite>

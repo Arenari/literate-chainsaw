@@ -10,25 +10,66 @@
   }, {
     "components" : [ {
       "componentAttributes" : {
-        "recordId" : "{!RecordId}"
+        "tabsetConfig" : {
+          "UUID" : "bb84e74e-5a26-4f68-b8c3-8875227dfa6f",
+          "activeTab" : "",
+          "tabs" : [ {
+            "UUID" : "e56f6fce-f1e7-467c-9c9b-d6d98c9b89ab",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "1",
+            "tabName" : "Account"
+          }, {
+            "UUID" : "e72e35bc-08cb-4464-9896-373fc85c7ee0",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "2",
+            "tabName" : "Contacts"
+          } ],
+          "useOverflowMenu" : false
+        }
       },
-      "componentName" : "forceCommunity:recordDetail",
-      "id" : "46479840-d8ec-4963-af75-d5d8b238ab67",
-      "renderPriority" : "NEUTRAL",
-      "renditionMap" : { },
-      "type" : "component"
-    }, {
-      "componentAttributes" : {
-        "customTitle" : "",
-        "parentRecordId" : "{!RecordId}",
-        "relatedListName" : "Contacts",
-        "showBreadCrumbs" : true,
-        "showCustomTitle" : false,
-        "showManualRefreshButton" : true,
-        "showRowNumbers" : true
-      },
-      "componentName" : "forceCommunity:relatedList",
-      "id" : "dea1176e-13bb-4fc9-9073-e07b6abdef9f",
+      "componentName" : "forceCommunity:tabset",
+      "id" : "bb84e74e-5a26-4f68-b8c3-8875227dfa6f",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "recordId" : "{!CurrentUser.accountId}"
+          },
+          "componentName" : "forceCommunity:recordDetail",
+          "id" : "46479840-d8ec-4963-af75-d5d8b238ab67",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "e56f6fce-f1e7-467c-9c9b-d6d98c9b89ab",
+        "regionLabel" : "Account",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "customTitle" : "",
+            "parentRecordId" : "{!CurrentUser.accountId}",
+            "relatedListName" : "Contacts",
+            "showBreadCrumbs" : true,
+            "showCustomTitle" : false,
+            "showManualRefreshButton" : true,
+            "showRowNumbers" : true
+          },
+          "componentName" : "forceCommunity:relatedList",
+          "id" : "dea1176e-13bb-4fc9-9073-e07b6abdef9f",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "e72e35bc-08cb-4464-9896-373fc85c7ee0",
+        "regionLabel" : "Contacts",
+        "regionName" : "2",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
       "renderPriority" : "NEUTRAL",
       "renditionMap" : { },
       "type" : "component"
@@ -47,8 +88,8 @@
   }, {
     "components" : [ {
       "componentAttributes" : {
+        "customHeadTags" : "",
         "description" : "",
-        "metaTags" : "",
         "title" : "Home"
       },
       "componentName" : "forceCommunity:seoAssistant",
