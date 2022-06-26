@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Profile xmlns="http://soap.sforce.com/2006/04/metadata">
+    <classAccesses>
+        <apexClass>KeyInformationController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>KeyInformationSelector</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <custom>true</custom>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>KeyInformation__c.User__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <layoutAssignments>
+        <layout>KeyInformation__c-Key Information Layout</layout>
+    </layoutAssignments>
+    <pageAccesses>
+        <apexPage>tmp</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <userLicense>Guest User License</userLicense>
+</Profile>

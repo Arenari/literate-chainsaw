@@ -1,0 +1,46 @@
+<template>
+  <template if:true={hasKeyInformation}>
+    <div class="card">
+      <div class="card__key-information slds-var-p-around_large">
+        <span class="title">Your Key Information</span>
+        <template if:true={error}>
+          <span class="error">Invalid field on key information.</span>
+        </template>
+        <template if:true={record}>
+          <template for:each={recordFields} for:item="recordField">
+            <div key={recordField.field} class="list-field-grid">
+              <span class="field-label">{recordField.label}:</span>
+              <span class="field-value">{recordField.value}</span>
+            </div>
+          </template>
+        </template>
+      </div>
+      <hr class="spacer" />
+      <div class="slds-var-p-around_large">
+        <template for:each={keyInformations} for:item="keyInformation">
+          <lightning-record-edit-form
+            key={keyInformation.Id}
+            object-api-name="KeyInformation__c"
+            record-id={keyInformation.Id}
+            onsuccess={handleSuccess}
+            onsubmit={handleSubmit}
+          >
+            <div class="field-grid">
+              <lightning-input-field
+                field-name="Field__c"
+                density="compact"
+              ></lightning-input-field>
+              <lightning-button
+                class="slds-form-element slds-form-element_horizontal"
+                variant="brand"
+                type="submit"
+                label="Update"
+              >
+              </lightning-button>
+            </div>
+          </lightning-record-edit-form>
+        </template>
+      </div>
+    </div>
+  </template>
+</template>
